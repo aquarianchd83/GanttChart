@@ -1,0 +1,9 @@
+
+<div class="canvas_wrapper">
+    <ul class="clr_boxes">
+        <li [ngStyle]="{ 'background-color': legend.color }" *ngFor="let legend of getLegends;">
+            {{legend.text}}
+        </li>
+    </ul>
+    <canvas #chartCanvas [height]="height" [width]="width"></canvas>
+</div>
